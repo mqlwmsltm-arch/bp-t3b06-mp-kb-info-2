@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마포 노래방 정보 - 형이 추천하는 쩌는 곳 블로그</title>
+    <meta name="description" content="마포에서 진짜 핫한 노래방 정보를 찐 리뷰와 함께. 형들이 직접 경험하고 추천하는 마포 노래방, 가격, 시설, 분위기 다 공개한다. 전화 010-6279-0862">
+    <meta name="keywords" content="마포 노래방, 마포 노래방 추천, 마포 가성비 노래방, 마포 코인노래방, 마포 노래방 가격, 마포 혼자 노래방, 마포 노래방 정보">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <link rel="canonical" href="https://t3b06-mp-kb-info-2.vercel.app/">
+    <!-- OG 메타 -->
+    <meta property="og:title" content="마포 노래방 정보 - 형이 추천하는 쩌는 곳">
+    <meta property="og:description" content="마포에서 진짜 핫한 노래방 정보를 찐 리뷰와 함께. 형들이 직접 경험하고 추천하는 마포 노래방, 가격, 시설, 분위기 다 공개한다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://t3b06-mp-kb-info-2.vercel.app/">
+    <style>
+        /* ---------- RESET & BASE ---------- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            font-size: 16px;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background: #f5f0e8;
+            color: #222;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+        a {
+            color: #222;
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+        a:hover {
+            color: #d4a017;
+            background: #333;
+            color: #f5f0e8;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+        ul {
+            list-style: none;
+        }
+        ::selection {
+            background: #d4a017;
+            color: #222;
+        }
+
+        /* ---------- TYPOGRAPHY ---------- */
+        h1, h2, h3, h4 {
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+        }
+        h1 {
+            font-size: 2.8rem;
+            border-left: 8px solid #d4a017;
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        h2 {
+            font-size: 2rem;
+            border-bottom: 4px solid #222;
+            padding-bottom: 0.3rem;
+            margin: 2rem 0 1rem;
+        }
+        h3 {
+            font-size: 1.4rem;
+            margin: 1.5rem 0 0.8rem;
+            background: #222;
+            color: #f5f0e8;
+            display: inline-block;
+            padding: 0.2rem 1rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        /* ---------- LAYOUT SYSTEM ---------- */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        /* ---------- NAV ---------- */
+        nav {
+            background: #222;
+            padding: 0.8rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 4px solid #d4a017;
+        }
+        nav .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #d4a017;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        nav .logo a {
+            color: #d4a017;
+            text-decoration: none;
+        }
+        nav .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+        nav .nav-links a {
+            color: #f5f0e8;
+            text-decoration: none;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            padding: 0.3rem 0.6rem;
+            border: 1px solid transparent;
+            transition: 0.2s;
+        }
+        nav .nav-links a:hover {
+            border-color: #d4a017;
+            color: #d4a017;
+            background: transparent;
+        }
+        nav .hamburger {
+            display: none;
+            font-size: 1.8rem;
+            color: #d4a017;
+            cursor: pointer;
+            background: none;
+            border: none;
+        }
+        nav .tel-link {
+            background: #d4a017;
+            color: #222 !important;
+            padding: 0.3rem 1rem;
+            font-weight: 700;
+            border-radius: 2px;
+        }
+        nav .tel-link:hover {
+            background: #f5f0e8;
+            color: #222 !important;
+        }
+
+        /* ---------- MAIN CONTENT ---------- */
+        .main-content {
+            flex: 1;
+            padding: 3rem 1.5rem;
+        }
+        .blog-post {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fffdf9;
+            padding: 2.5rem;
+            border: 3px solid #222;
+            box-shadow: 10px 10px 0 #222;
+        }
+        .blog-post .meta {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+            margin-bottom: 0.5rem;
+        }
+        .blog-post .meta span {
+            background: #d4a017;
+            color: #222;
+            padding: 0.1rem 0.5rem;
+            font-weight: 700;
+        }
+        .blog-post p {
+            margin-bottom: 1.2rem;
+        }
+        .blog-post blockquote {
+            border-left: 5px solid #d4a017;
+            padding: 0.8rem 1rem;
+            margin: 1.5rem 0;
+            background: #f9f4ea;
+            font-style: italic;
+        }
+        .blog-post .highlight-box {
+            background: #222;
+            color: #f5f0e8;
+            padding: 1.2rem;
+            margin: 1.5rem 0;
+            border-left: 6px solid #d4a017;
+        }
+        .blog-post ul {
+            list-style: disc;
+            padding-left: 1.5rem;
+            margin: 1rem 0;
+        }
+        .blog-post ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* ---------- FAQ ---------- */
+        .faq-section {
+            max-width: 800px;
+            margin: 3rem auto 0;
+            padding: 2rem;
+            background: #fffdf9;
+            border: 3px solid #222;
+            box-shadow: 10px 10px 0 #222;
+        }
+        .faq-item {
+            border-bottom: 2px solid #ddd;
+            padding: 1rem 0;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+        .faq-question {
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .faq-question::after {
+            content: '+';
+            font-size: 1.4rem;
+            color: #d4a017;
+        }
+        .faq-answer {
+            margin-top: 0.5rem;
+            color: #444;
+            display: none;
+        }
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        /* ---------- FOOTER ---------- */
+        footer {
+            background: #222;
+            color: #f5f0e8;
+            text-align: center;
+            padding: 2rem 1.5rem;
+            margin-top: 3rem;
+            border-top: 4px solid #d4a017;
+        }
+        footer p {
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        footer a {
+            color: #d4a017;
+        }
+
+        /* ---------- RESPONSIVE 768px ---------- */
+        @media (max-width: 768px) {
+            nav .nav-links {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 0.8rem;
+                padding: 1rem 0 0.5rem;
+                border-top: 2px solid #d4a017;
+                margin-top: 0.5rem;
+            }
+            nav .nav-links.open {
+                display: flex;
+            }
+            nav .hamburger {
+                display: block;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            h2 {
+                font-size: 1.6rem;
+            }
+            .blog-post {
+                padding: 1.5rem;
+            }
+            .faq-section {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<!-- 네비게이션 -->
+<nav>
+    <div class="logo"><a href="/">마노ⓘ</a></div>
+    <button class="hamburger" id="hamburger" aria-label="메뉴 열기">☰</button>
+    <div class="nav-links" id="navLinks">
+        <a href="/">홈</a>
+        <a href="/blog">블로그</a>
+        <a href="/faq">FAQ</a>
+        <a href="tel:010-6279-0862" class="tel-link">📞 010-6279-0862</a>
+    </div>
+</nav>
+
+<!-- 메인 콘텐츠 -->
+<section class="main-content">
+    <div class="container">
+        <!-- 블로그 포스트 -->
+        <article class="blog-post">
+            <div class="meta"><span>핫한 정보</span> · 작성일 2025.03.20 · 마포 노래방 찐리뷰</div>
+            <h1>마포 노래방 찐추천 — 형이 직접 가본 쩌는 곳들</h1>
+
+            <p>야, 나는 원래 노래방 잘 안 가는 편이었는데, 마포에 살면서 주변에서 "야 이 노래방 찐이다" 하는 소리를 너무 많이 들어서 한번 쭉 돌아다녀 봤어. 결과는? <strong>생각보다 괜찮은 곳이 많더라</strong>. 오늘은 형이 직접 가보고 느낀 마포 노래방 몇 곳을 솔직하게 풀어볼게.</p>
+
+            <h2>1. 홍대입구역 근처 — '루나노래방'</h2>
+            <p>위치는 홍대입구역 3번 출구에서 걸어서 5분. 외관은 좀 올드해 보이는데 안은 완전 리모델링했더라고. 방음도 좋고 마이크도 무선 4개까지 지원됨. <em>여기 포인트는 무한리필 음료</em> — 콜라, 사이다, 커피 다 공짜야. 가격은 1시간에 15,000원 (주말 기준). 친구랑 둘이 가면 1인당 7,500원이면 1시간 논다는 거지. 나쁘지 않지?</p>
+
+            <blockquote>“형, 여기 리모컨 블루투스라 앱으로도 노래 검색됨. 신상이다 신상!” — 같이 간 동생 왈</blockquote>
+
+            <h2>2. 합정역 인근 — '코인노래방 쏭쏭'</h2>
+            <p>혼자 가기 좋은 곳 찾는다면 여기 강추. 1코인에 500원, 1곡당 평균 400~600원 수준. 방은 좁지만 깔끔하고 헤드폰도 있어서 옆방 소리 안 들림. <strong>여기 단점은 에어컨이 좀 약해</strong> — 여름에 가면 땀 좀 흘릴 각오해야 함. 그래도 가성비는 진짜 쩔어. 나는 점심시간에 혼자 가서 30분 동안 4곡 불렀는데 2,000원 나왔어. 실화임.</p>
+
+            <div class="highlight-box">
+                💡 TIP: 쏭쏭은 평일 오후 2~5시 사이에 가면 사람도 적고 방도 잘 나와. 단, 가기 전에 네이버에 영업시간 확인 필수!
+            </div>
+
+            <h2>3. 마포구청역 맞은편 — '노래하는 수요일'</h2>
+            <p>여기는 완전 대형 노래방이야. 30개 이상의 방이 있고, 내부 인테리어가 콘셉트별로 다름. 나는 '우주 방'에서 불러봤는데 벽에 별이 반짝이고 조명이 은하수처럼 나와. 신기했어. <u>가격은 2시간 25,000원</u>으로 약간 비싼 편인데, 시설하며 분위기하며 돈값 한다는 생각이 들더라. 데이트 코스로도 좋을 듯.</p>
+
+            <p><a href="tel:010-6279-0862">전화 문의: 010-6279-0862</a> — 예약 가능한지 물어보고 가는 게 정신건강에 이로움. 주말엔 웨이팅 있을 수 있음.</p>
+
+            <h2>마무리 — 내 최애는?</h2>
+            <p>개인적으로 가성비 + 분위기 다 잡은 <strong>루나노래방</strong>을 제일 자주 가게 되더라. 음료 무한리필에 방음 좋고, 위치도 홍대입구역에서 가까워서 술 마시고 가기도 편하고. 하지만 혼종이나 빠르게 한 곡만 부르고 싶다면 <strong>코인노래방 쏭쏭</strong>도 나쁘지 않아. 여러분도 마포에서 노래방 찾는다면 한번씩 경험해봐. 후회 안 할 거야.</p>
+
+            <p>궁금한 거 있으면 댓글 남겨주셈. 형이 아는 선에서 다 알려줄게. 📞 010-6279-0862</p>
+        </article>
+
+        <!-- FAQ 섹션 -->
+        <div class="faq-section">
+            <h2 style="border-bottom: 4px solid #d4a017; padding-bottom: 0.3rem; margin-top: 0;">자주 묻는 질문</h2>
+
+            <div class="faq-item">
+                <div class="faq-question">마포 노래방 가격은 어느 정도인가요?</div>
+                <div class="faq-
+</body>
+</html>
