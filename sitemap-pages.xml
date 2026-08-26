@@ -36,11 +36,6 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://shirts-mapo-star.xyz/posts/juice-2.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://shirts-mapo-star.xyz/posts/normal-1.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
@@ -51,17 +46,22 @@
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://shirts-mapo-star.xyz/posts/normal-3.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://shirts-mapo-star.xyz/posts/qa-001-1ra7sjf.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://shirts-mapo-star.xyz/posts.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://shirts-mapo-star.xyz/posts/juice-2.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://shirts-mapo-star.xyz/posts/normal-3.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
